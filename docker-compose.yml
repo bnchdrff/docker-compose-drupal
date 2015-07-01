@@ -14,7 +14,7 @@ ambassador:
   image: cpuguy83/docker-grand-ambassador
   volumes:
     - "/var/run/docker.sock:/var/run/docker.sock"
-  command: "-name dockercompose_drupaldb_1 -name dockercompose_drupalwww_1"
+  command: "-name dockercomposedrupal_drupaldb_1 -name dockercomposedrupal_drupalwww_1"
 
 nginxproxy:
   build: ./nginx-proxy
